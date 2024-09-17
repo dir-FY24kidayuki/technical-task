@@ -16,7 +16,25 @@ wsl --install
 
 ## PostgreSQLのインストール
 
-WSL環境にPostgreSQLをインストールできる。
+サーバのローカルパッケージインデックスを最新に更新する。
+```
+sudo apt update
+```
+追加のユーティリティと機能をいくつか追加する-contribパッケージとともにPostgresパッケージをインストールする。
+```
+sudo apt install postgresql postgresql-contrib
+```
+
+## PostgreSQLの起動
+
+PostgreSQLを起動するには、以下のコマンドを実行する。
+```
+sudo service postgresql start
+```
+起動しているかの確認を行う。
+```
+sudo service postgresql status
+```
 
 ## 操作画面へのログイン
 
