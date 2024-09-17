@@ -1,5 +1,20 @@
 # PostgreSQL導入手順
 
+## WSLのインストール
+
+まずは、Windowsマシン上でWSL（Windows Subsystem for Linux）を使用できるように準備を行う。
+:::note info
+前提条件
+以下のコマンドを使用するには、Windows10 バージョン2004以上（ビルド19041以上）またはWindows11を実行している必要がある。
+:::
+
+PowerShellまたはWindowsコマンドプロンプトを**管理者**モードで開き、以下のコマンドを入力し、マシンを再起動する。
+
+```powershell:powershell
+wsl --install
+```
+デフォルトでは、インストールされるLinuxディストリビューションはUbuntuになる。
+
 ## PostgreSQLのインストール
 
 WSL環境にPostgreSQLをインストールできる。
