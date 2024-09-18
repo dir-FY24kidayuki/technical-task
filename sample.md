@@ -38,11 +38,18 @@ sudo service postgresql status
 
 ## 操作画面へのログイン
 
-コマンドを打ち込むことで、PostgreSQLにログインできる。
+デフォルトで作成されているpostgresユーザでpostgresにログインする。
+```
+sudo -u postgres psql
+```
 
 ## データベースの作成
 
-データベースを作成できる。
+以下のコマンドでデータベースを作成できる。
+```
+CREATE DATABASE <データベース名>
+```
+データベース名に任意の名称を入力する。
 
 ## データベースに接続
 
